@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    
+    
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+
+.sidebar {
+    grid-row: 1 / 7;
+}
+
+.main {
+    grid-row: 2 / 7;
+}
+.footer {
+    grid-column: 1 / 3;
+}
+.sidebar, .header, .main, .footer {
+    border: 1px solid black;
+    
+}
