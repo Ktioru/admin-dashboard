@@ -4,12 +4,14 @@
     
 }
 
+
 .container {
     
     font-family: "Sofia Sans", sans-serif;
     display: grid;
     grid-template-columns: 1fr 4fr;
     gap: 15px;
+    
 }
 
 
@@ -17,6 +19,7 @@
     grid-row: 1 / 7;
     display: grid;
     grid-template-rows: 1fr 10fr;
+    background-color: #d1d5db;
     
 }
 
@@ -49,6 +52,9 @@ li > img {
     
 }
 
+.header {
+    background-color: white;
+}
 
 
 .search-bar {
@@ -113,6 +119,8 @@ button {
     border: 1px solid white;
     background-color: black;
     color: white;
+    font-size: 16px;
+    font-weight: bold;
     
 }
 
@@ -121,6 +129,8 @@ button {
     display: grid;
     grid-template-columns: 3fr 1fr;
     background-color: whitesmoke;
+    
+    
 }
 
 main  h2 {
@@ -141,7 +151,7 @@ main  h2 {
     height: 250px;
     
     border-radius: 10px;
-    background-color: white;
+    background-color: #d1d5db;
     border-left: 10px solid black;
 
     padding: 16px;
@@ -166,4 +176,15 @@ main  h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #d1d5db;
+    
+    
+}
+
+footer a {
+    color: black;
+}
+
+input {
+    border: 2px solid black;
 }
