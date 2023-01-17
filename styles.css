@@ -9,13 +9,14 @@
     font-family: "Sofia Sans", sans-serif;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    gap: 15px;
 }
 
 
 .sidebar {
     grid-row: 1 / 7;
     display: grid;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 10fr;
     
 }
 
@@ -23,6 +24,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 .items {
@@ -52,11 +55,13 @@ li > img {
     display: flex;
     justify-content: space-evenly;
     padding-top: 10px;
+    
 }
 
 .profile {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 .profile > img {
     width: 48px;
@@ -102,20 +107,63 @@ li > img {
 }
 
 button {
-    width: 70px;
-    height: 30px;
+    width: 80px;
+    height: 40px;
     border-radius: 20px;
-    
+    border: 1px solid white;
+    background-color: black;
+    color: white;
     
 }
 
 .main {
     grid-row: 2 / 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: whitesmoke;
+}
+
+main  h2 {
+    padding: 16px;
+}
+
+.projects-content {
+    display: grid;
+    gap: 35px;
+    grid-template-columns: repeat(auto-fit, 350px);
+    
+    justify-content: center;
+}
+
+
+.project-box {
+    width: 300px;
+    height: 250px;
+    
+    border-radius: 10px;
+    background-color: white;
+    border-left: 10px solid black;
+
+    padding: 16px;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.announcement-box {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+
+    padding: 16px;
+
 }
 .footer {
     grid-column: 1 / 3;
-}
-.sidebar, .header, .main, .footer {
-   
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
